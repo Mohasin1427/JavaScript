@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="n1" >
+        <input type="number" id="n2" >
+        <input type="number" id="n3" >
+        <script>
+            function highest_number(n1,n2,n3)
+            {       var x=0;
+                    if(n1>=n2 && n1>=n3)
+                    x=n1;
+                    else if (n2>=n1 && n2>=n3)
+                    x=n2;
+                    else if (n3>=n1 && n3>=n2)
+                    x=n3;
+            
+            alert(x);
+            }
+        </script>
+        <button type="button" onclick="highest_number(document.getElementById('n1').value,
+        document.getElementById('n2').value, document.getElementById('n3').value)">Highest no. is</button>
+
+    </body>
+</html>
