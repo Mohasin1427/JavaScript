@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>checking @ in email</h2>
+        <input type="text" id='email'>
+        <button type="button" onclick="check()">Check</button>
+        
+        <script>
+            function check()
+            {
+                let email=document.getElementById('email').value;
+                console.log(email);
+                let checked=email.includes("@");
+                alert(checked);
+            }
+        </script>
+
+    </body>
+</html>

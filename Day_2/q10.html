@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id='mobile'>
+        <button type="button" onclick="check()">Check for 10</button>
+        <p id="r"></p>
+        <script>
+            function check()
+            {
+                let mobile=document.getElementById('mobile').value;
+                let length=mobile.length;
+                console.log(mobile);
+                console.log(length);
+                if(length==10){
+                console.log("Mobile no. is of 10 digit");
+                document.getElementById("r").innerHTML="Mobile no. is of 10 digit";
+                }
+                else{
+                    console.log("Mobile no. is not 10 digit");
+                document.getElementById("r").innerHTML="Mobile no. is not 10 digit";
+                 
+                }
+
+                
+            }
+        </script>
+
+    </body>
+</html>
