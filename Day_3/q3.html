@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Square and cube using static method</h2></br>
+        <input type="number" id="num"/><br><br>
+        <button type="button" 
+                onclick="Math.square(document.getElementById('num').value);
+                         Math.cube(document.getElementById('num').value)">Click for Square & Cube</button>
+        <h4 id="sqr"></h4>
+        <h4 id="cube"></h4>
+        <script>
+             class Math
+             {
+                 static square(sqr)
+                 {
+                    this.sqr=sqr*sqr;
+                    document.getElementById("sqr").innerHTML=`Square is ${this.sqr}`;
+                 }
+                 static cube(cub)
+                 {
+                     this.cub=cub*cub*cub;
+                     document.getElementById("cube").innerHTML=`Cube is ${this.cub}`;
+                 }
+             }
+                   
+        </script>
+    </body>
+    </html>
+</html>

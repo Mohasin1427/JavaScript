@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Factorial using arrow function</h2>
+        <input type="number" id="fact"/>
+       
+        <button type="button" onclick="print(document.getElementById('fact').value)">Factorial</button>
+        <p id="f"></p>
+       <script>
+            let print=(number)=>{      //let number
+                let fact=1;
+                for(let i=number;i>0;i--)
+                {
+                    fact=fact*i;
+                }
+                console.log(fact);
+                document.getElementById("f").innerHTML=`Factorial of ${number} is ${fact}`;
+            }
+        </script>
+    </body>
+</html>

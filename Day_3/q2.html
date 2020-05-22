@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>class account having property name and balance with deposit method</h2></br>
+        <p id="f"></p>
+        <script>
+             class Account
+             {
+                   constructor(name,balance)
+                   {
+                      this.name=name;
+                      this.balance=balance;
+                   }
+                   deposit(dep)
+                   {
+                      this.balance=this.balance+dep;
+                   }
+                   display()
+                   {
+                       return `${this.name} Having ${this.balance} in a account`;
+                   }
+             }
+                   myAccount=new Account("Raju",10000);
+                   myAccount.deposit(5000);
+                   console.log(myAccount.display()); 
+    
+                   myAccount1=new Account("Shyam",20000);
+                   myAccount1.deposit(3000);
+                   console.log(myAccount1.display());   
+        </script>
+        </body>
+</html>

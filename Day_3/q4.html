@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>Inherit Current Account class from Account class</h3></br>
+        <p id="acc"></p>
+        <script>
+             class Account
+             {
+                   constructor(name,balance)
+                   {
+                      this.name=name;
+                      this.balance=balance;
+                      console.log(`Initial ${this.name} has RS ${this.balance} in account`);
+                   }
+                   deposit(dep)
+                   {  
+                      console.log(`${this.name} Want to deposit RS ${dep} in account`);
+                      this.balance=this.balance+dep;
+                      console.log(`Now RS ${dep} is deposited in ${this.name} account`);
+                   }
+             }
+             class Current extends Account
+             {
+                    constructor(name,balance)
+                    {
+                         super(name,balance);
+                    }
+                    withdraw(debit)
+                    {
+                        this.debit=debit;
+                        console.log(`${this.name} want to withdraw RS ${this.debit} from account`);
+                        this.balance=this.balance-this.debit;
+                        console.log(`Rs ${this.debit} debited from ${this.name} account`);
+                    }
+                    show()
+                    {
+                        return `Now ${this.name} Having ${this.balance} balance left in a account`;
+                    }
+             }
+                   myAccount=new Current("Raju",10000);
+                   myAccount.deposit(5000);
+                   myAccount.withdraw(5000);
+                   console.log(myAccount.show()); 
+    
+                   myAccount1=new Current("Shyam",20000);
+                   myAccount1.deposit(3000);
+                   myAccount1.withdraw(2000);
+                   console.log(myAccount1.show());   
+        </script>
+    </body>
+</html>
