@@ -1,0 +1,21 @@
+body{                                         
+   background-color: bisque;
+    font-weight: bold ; 
+    text-align: center; 
+    font-family:sans-serif,bold, Arial, Helvetica; 
+    font-size:14px; 
+} 
+
+fieldset{
+    align-self: auto;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    font-style: italic;
+    font-weight: bolder;
+    
+}

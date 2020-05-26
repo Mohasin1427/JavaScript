@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="q1.css">
+</head>
+
+<body>
+  <h2 style="text-align: center; color: brown;">REGISTRATION FORM</h2>
+
+  <form action="done.html" name="regform"  onsubmit="return validate()" method="POST" >
+    <fieldset>
+      <legend style="text-align: center;">REGISTRATION</legend>
+    <lable>USER ID :</lable>
+    <input id="userid" onchange="idVal()">
+    <label id="isid" style="display: none; color:red;">Less than 3 & more than 15 characters are not Allowed</label>
+    <br><br>
+    <lable>PASSWORD :</lable>
+    <input type="password" id="pass" onchange="passVal()">
+    <label id="ispwd" style="display: none; color: red;">Atleast 8 characters are Allowed</label>
+    <br><br>
+    <lable>MOBILE NUMBER :</lable>
+    <input type="number" id="mobile" onchange="mobileVal()">
+    <label id="ismobile" style="display: none; color: red;">Please enter 10 digit of Mobile number</label>
+    <br><br>
+    <lable>ADDRESS :</lable>
+    <textarea id="address" cols="30" rows="5" required></textarea>
+    <label id="isaddress" style="display: none; color: red;">Please enter your address</label>
+    <br><br>
+    <lable>AGE :</lable>
+    <input type="number" id="age" onchange="ageVal()">
+    <label id="isage" style="display: none; color: red;">Age must be in between 18 to 100</label>
+    <br><br>
+    <input type="submit" name="submit">
+    </fieldset>
+  </form>
+  <script src="q1.js">
+  </script>
+</body>
+</html>
